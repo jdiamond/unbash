@@ -18,6 +18,13 @@ export function computeWordParts(source: string, word: Word): WordPart[] | undef
     resolveExpansion(exp);
   }
 
+  // Resolve command substitutions inside arithmetic expressions
+  for (const part of parts) {
+    if (part.type === "ArithmeticExpansion" && part.expression) {
+      resolveArithmeticExpansions(part.expression);
+    }
+  }
+
   return parts;
 }
 
@@ -34,13 +41,6 @@ export function computeHereDocBodyParts(source: string, word: Word): WordPart[] 
   // Resolve command expansions: parse inner scripts
   for (const exp of lexer.getCollectedExpansions()) {
     resolveExpansion(exp);
-  }
-
-  // Resolve command substitutions inside arithmetic expressions
-  for (const part of parts) {
-    if (part.type === "ArithmeticExpansion" && part.expression) {
-      resolveArithmeticExpansions(part.expression);
-    }
   }
 
   return parts;
