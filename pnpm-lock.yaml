@@ -8,18 +8,9 @@ importers:
 
   .:
     devDependencies:
-      '@ericcornelissen/bash-parser':
-        specifier: ^0.5.3
-        version: 0.5.3
       '@types/node':
         specifier: ^24.10.13
         version: 24.10.13
-      bash-parser:
-        specifier: ^0.5.0
-        version: 0.5.0
-      mitata:
-        specifier: ^1.0.34
-        version: 1.0.34
       oxfmt:
         specifier: ^0.35.0
         version: 0.35.0
@@ -35,6 +26,16 @@ importers:
       rolldown:
         specifier: 1.0.0-rc.6
         version: 1.0.0-rc.6
+    optionalDependencies:
+      '@ericcornelissen/bash-parser':
+        specifier: ^0.5.3
+        version: 0.5.3
+      bash-parser:
+        specifier: ^0.5.0
+        version: 0.5.0
+      mitata:
+        specifier: ^1.0.34
+        version: 1.0.34
       sh-syntax:
         specifier: ^0.5.8
         version: 0.5.8
@@ -909,6 +910,7 @@ snapshots:
       shell-quote-word: 1.0.1
       to-pascal-case: 1.0.0
       unescape-js: 1.1.4
+    optional: true
 
   '@napi-rs/wasm-runtime@1.1.1':
     dependencies:
@@ -1099,13 +1101,16 @@ snapshots:
 
   '@types/unist@3.0.3': {}
 
-  arity-n@1.0.4: {}
+  arity-n@1.0.4:
+    optional: true
 
   array-last@1.3.0:
     dependencies:
       is-number: 4.0.0
+    optional: true
 
-  babylon@6.18.0: {}
+  babylon@6.18.0:
+    optional: true
 
   bail@2.0.2: {}
 
@@ -1132,6 +1137,7 @@ snapshots:
       to-pascal-case: 1.0.0
       transform-spread-iterable: 1.4.1
       unescape-js: 1.1.4
+    optional: true
 
   ccount@2.0.1: {}
 
@@ -1146,8 +1152,10 @@ snapshots:
   compose-function@3.0.3:
     dependencies:
       arity-n: 1.0.4
+    optional: true
 
-  curry@1.2.0: {}
+  curry@1.2.0:
+    optional: true
 
   debug@4.4.3:
     dependencies:
@@ -1157,7 +1165,8 @@ snapshots:
     dependencies:
       character-entities: 2.0.2
 
-  deep-freeze@0.0.1: {}
+  deep-freeze@0.0.1:
+    optional: true
 
   dequal@2.0.3: {}
 
@@ -1173,17 +1182,21 @@ snapshots:
     dependencies:
       format: 0.2.2
 
-  filter-iterator@0.0.1: {}
+  filter-iterator@0.0.1:
+    optional: true
 
-  filter-obj@1.1.0: {}
+  filter-obj@1.1.0:
+    optional: true
 
   format@0.2.2: {}
 
   github-slugger@2.0.0: {}
 
-  has-own-property@0.1.0: {}
+  has-own-property@0.1.0:
+    optional: true
 
-  identity-function@1.0.0: {}
+  identity-function@1.0.0:
+    optional: true
 
   is-alphabetical@2.0.1: {}
 
@@ -1196,32 +1209,40 @@ snapshots:
 
   is-hexadecimal@2.0.1: {}
 
-  is-iterable@1.1.1: {}
+  is-iterable@1.1.1:
+    optional: true
 
-  is-number@4.0.0: {}
+  is-number@4.0.0:
+    optional: true
 
   is-plain-obj@4.1.0: {}
 
-  iterable-lookahead@1.0.0: {}
+  iterable-lookahead@1.0.0:
+    optional: true
 
   iterable-transform-replace@1.2.0:
     dependencies:
       curry: 1.2.0
+    optional: true
 
-  lodash.curry@4.1.1: {}
+  lodash.curry@4.1.1:
+    optional: true
 
   longest-streak@3.1.0: {}
 
   magic-string@0.16.0:
     dependencies:
       vlq: 0.2.3
+    optional: true
 
   map-iterable@1.0.1:
     dependencies:
       curry: 1.2.0
       is-iterable: 1.1.1
+    optional: true
 
-  map-obj@2.0.0: {}
+  map-obj@2.0.0:
+    optional: true
 
   markdown-table@3.0.4: {}
 
@@ -1560,17 +1581,22 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  mitata@1.0.34: {}
+  mitata@1.0.34:
+    optional: true
 
   ms@2.1.3: {}
 
-  node-addon-api@8.5.0: {}
+  node-addon-api@8.5.0:
+    optional: true
 
-  node-gyp-build@4.8.4: {}
+  node-gyp-build@4.8.4:
+    optional: true
 
-  object-pairs@0.1.0: {}
+  object-pairs@0.1.0:
+    optional: true
 
-  object-values@1.0.0: {}
+  object-values@1.0.0:
+    optional: true
 
   oxfmt@0.35.0:
     dependencies:
@@ -1717,7 +1743,8 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  reverse-arguments@1.0.0: {}
+  reverse-arguments@1.0.0:
+    optional: true
 
   rolldown@1.0.0-rc.6:
     dependencies:
@@ -1741,10 +1768,13 @@ snapshots:
   sh-syntax@0.5.8:
     dependencies:
       tslib: 2.8.1
+    optional: true
 
-  shell-quote-word@1.0.1: {}
+  shell-quote-word@1.0.1:
+    optional: true
 
-  string.fromcodepoint@0.2.1: {}
+  string.fromcodepoint@0.2.1:
+    optional: true
 
   stringify-entities@4.0.4:
     dependencies:
@@ -1753,19 +1783,23 @@ snapshots:
 
   tinypool@2.1.0: {}
 
-  to-no-case@1.0.2: {}
+  to-no-case@1.0.2:
+    optional: true
 
   to-pascal-case@1.0.0:
     dependencies:
       to-space-case: 1.0.0
+    optional: true
 
   to-space-case@1.0.0:
     dependencies:
       to-no-case: 1.0.2
+    optional: true
 
   transform-spread-iterable@1.4.1:
     dependencies:
       curry: 1.2.0
+    optional: true
 
   tree-sitter-bash@0.25.1(tree-sitter@0.25.0):
     dependencies:
@@ -1773,23 +1807,28 @@ snapshots:
       node-gyp-build: 4.8.4
     optionalDependencies:
       tree-sitter: 0.25.0
+    optional: true
 
   tree-sitter@0.25.0:
     dependencies:
       node-addon-api: 8.5.0
       node-gyp-build: 4.8.4
+    optional: true
 
   trough@2.2.0: {}
 
-  tslib@2.8.1: {}
+  tslib@2.8.1:
+    optional: true
 
-  typescript@5.9.3: {}
+  typescript@5.9.3:
+    optional: true
 
   undici-types@7.16.0: {}
 
   unescape-js@1.1.4:
     dependencies:
       string.fromcodepoint: 0.2.1
+    optional: true
 
   unified-prettier@2.0.1(prettier@3.8.1):
     dependencies:
@@ -1841,8 +1880,10 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.3
 
-  vlq@0.2.3: {}
+  vlq@0.2.3:
+    optional: true
 
-  web-tree-sitter@0.26.5: {}
+  web-tree-sitter@0.26.5:
+    optional: true
 
   zwitch@2.0.4: {}
